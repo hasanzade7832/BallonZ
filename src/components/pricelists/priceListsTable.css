@@ -89,5 +89,24 @@
     direction: rtl; /* هماهنگی جهت متن با زبان فارسی */
 }
 
+/* آیکونهای فیلتر */
+.icon {
+    display: grid;
+    grid-template-columns: repeat(2, 10px);
+    grid-template-rows: repeat(2, 10px);
+    gap: 1px;
+  }
+  
+  .square {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #000;
+  }
+  
+  .red {
+    background-color: red;
+  }
 
-
+  .green {
+    background-color: green;
+  }
