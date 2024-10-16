@@ -4,7 +4,7 @@ import { Column } from 'primereact/column';
 import 'primereact/resources/themes/saga-blue/theme.css';
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
-import './styles.css'; // فایل CSS
+import '../../styles.css';
 
 interface Order {
     price: string;
@@ -78,13 +78,15 @@ const OrderBookComponent = () => {
                 <DataTable
                     value={buyOrders}
                     scrollable
-                    scrollHeight="200px" 
+                    scrollHeight="200px"
                     rowClassName={rowClassNameBuy}
                     className="text-sm max-h-60"
+                    sortField="totalPrice"
+                    sortOrder={-1} // مقدار -۱ به معنای مرتب‌سازی نزولی است
                 >
-                    <Column field="totalPrice" header="قیمت کل (تومان)" className="p-2"></Column>
+                    <Column field="totalPrice" header="قیمت کل (تومان)" className="p-2" sortable></Column>
                     <Column field="weight" header="مقدار (گرم)" className="p-2"></Column>
-                    <Column field="price" header="قیمت (تومان)" className="p-2"></Column>
+                    <Column field="price" header="قیمت (تومان)" className="p-2" ></Column>
                 </DataTable>
             </div>
 
@@ -98,13 +100,15 @@ const OrderBookComponent = () => {
                 <DataTable
                     value={sellOrders}
                     scrollable
-                    scrollHeight="200px" 
+                    scrollHeight="200px"
                     rowClassName={rowClassNameSell}
                     className="text-sm max-h-60"
+                    sortField="totalPrice"
+                    sortOrder={-1} // مرتب‌سازی نزولی
                 >
-                    <Column field="totalPrice" header="قیمت کل (تومان)" className="p-2"></Column>
+                    <Column field="totalPrice" header="قیمت کل (تومان)" className="p-2" sortable></Column>
                     <Column field="weight" header="مقدار (گرم)" className="p-2"></Column>
-                    <Column field="price" header="قیمت (تومان)" className="p-2"></Column>
+                    <Column field="price" header="قیمت (تومان)" className="p-2" ></Column>
                 </DataTable>
             </div>
         </div>

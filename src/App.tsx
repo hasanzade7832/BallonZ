@@ -1,9 +1,9 @@
 import React from 'react';
-import ChartComponent from './ChartComponent';
-import OrderBookComponent from './OrderBookComponent';
-import BuySellComponent from './BuySellComponent';
-import PriceComponent from './PriceComponents';
-import Navbar from './MainMenu';
+import ChartComponent from './components/chart/ChartComponent';
+import OrderBookComponent from './components/pricelists/PriceListsTable';
+import BuySellComponent from './components/order/OrderForm';
+import PriceComponent from './components/header/PriceChanges';
+import Navbar from './components/header/MainMenu';
 
 const MainLayout = () => {
   return (
