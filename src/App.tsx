@@ -1,26 +1,42 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import ChartComponent from './ChartComponent';
+import OrderBookComponent from './OrderBookComponent';
+import BuySellComponent from './BuySellComponent';
+import PriceComponent from './PriceComponents';
+import Navbar from './MainMenu';
 
-function App() {
+const MainLayout = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <>
+      {/* Navbar */}
+      <div className="fixed w-full z-10">
+        <Navbar />
+      </div>
 
-export default App;
+      {/* PriceComponent - نمایش اطلاعات قیمت */}
+      <div className="p-4 bg-gray-100">
+        <PriceComponent />
+      </div>
+
+      {/* محتوای اصلی شامل چارت، دفتر سفارشات و خرید/فروش */}
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 p-4 h-auto bg-white">
+        {/* ChartComponent */}
+        <div className="col-span-1 md:col-span-2 xl:col-span-2 bg-white p-4 rounded-md shadow-md">
+          <ChartComponent />
+        </div>
+
+        {/* OrderBookComponent */}
+        <div className="col-span-1 xl:col-span-1 bg-[#f3f4f6] p-4 rounded-md shadow-md">
+          <OrderBookComponent />
+        </div>
+
+        {/* BuySellComponent */}
+        <div className="col-span-1 xl:col-span-1 bg-white p-4 rounded-md shadow-md">
+          <BuySellComponent />
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default MainLayout;

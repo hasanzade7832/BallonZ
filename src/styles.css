@@ -1,0 +1,95 @@
+/* استایل برای نوار سبز بر اساس درصد */
+.row-with-bar-100 {
+    background: linear-gradient(270deg,  #dcfce7 100%, transparent 100%);
+}
+
+.row-with-bar-90 {
+    background: linear-gradient(270deg,  #dcfce7 90%, transparent 90%);
+}
+
+.row-with-bar-80 {
+    background: linear-gradient(270deg,  #dcfce7 80%, transparent 80%);
+}
+
+.row-with-bar-70 {
+    background: linear-gradient(270deg,  #dcfce7 70%, transparent 70%);
+}
+
+.row-with-bar-60 {
+    background: linear-gradient(270deg,  #dcfce7 60%, transparent 60%);
+}
+
+.row-with-bar-50 {
+    background: linear-gradient(270deg,  #dcfce7 50%, transparent 50%);
+}
+
+.row-with-bar-40 {
+    background: linear-gradient(270deg,  #dcfce7 40%, transparent 40%);
+}
+
+.row-with-bar-30 {
+    background: linear-gradient(270deg,  #dcfce7 30%, transparent 30%);
+}
+
+.row-with-bar-20 {
+    background: linear-gradient(270deg,  #dcfce7 20%, transparent 20%);
+}
+
+.row-with-bar-10 {
+    background: linear-gradient(270deg,  #dcfce7 10%, transparent 10%);
+}
+
+
+.row-with-bar-sell-100 {
+    background: linear-gradient(270deg,  #fce7e7 100%, transparent 100%);
+}
+
+.row-with-bar-sell-90 {
+    background: linear-gradient(270deg,  #fce7e7 90%, transparent 90%);
+}
+
+.row-with-bar-sell-80 {
+    background: linear-gradient(270deg,  #fce7e7 80%, transparent 80%);
+}
+
+.row-with-bar-sell-70 {
+    background: linear-gradient(270deg,  #fce7e7 70%, transparent 70%);
+}
+
+.row-with-bar-sell-60 {
+    background: linear-gradient(270deg,  #fce7e7 60%, transparent 60%);
+}
+
+.row-with-bar-sell-50 {
+    background: linear-gradient(270deg,  #fce7e7 50%, transparent 50%);
+}
+
+.row-with-bar-sell-40 {
+    background: linear-gradient(270deg,  #fce7e7 40%, transparent 40%);
+}
+
+.row-with-bar-sell-30 {
+    background: linear-gradient(270deg,  #fce7e7 30%, transparent 30%);
+}
+
+.row-with-bar-sell-20 {
+    background: linear-gradient(270deg,  #fce7e7 20%, transparent 20%);
+}
+
+.row-with-bar-sell-10 {
+    background: linear-gradient(270deg,  #fce7e7 10%, transparent 10%);
+}
+
+
+/* styles.css */
+
+/* راست‌چین کردن محتوا و کاهش سایز فونت و پدینگ */
+.p-datatable td, .p-datatable th {
+    font-size: 0.875rem; /* سایز فونت */
+    padding: 4px 8px; /* پدینگ کمتر */
+    text-align: right; /* راست‌چین کردن نوشته‌ها */
+    direction: rtl; /* هماهنگی جهت متن با زبان فارسی */
+}
+
+
+
