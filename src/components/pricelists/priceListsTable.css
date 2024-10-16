@@ -81,8 +81,6 @@
 }
 
 
-/* styles.css */
-
 /* راست‌چین کردن محتوا و کاهش سایز فونت و پدینگ */
 .p-datatable td, .p-datatable th {
     font-size: 0.875rem; /* سایز فونت */
