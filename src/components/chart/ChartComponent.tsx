@@ -74,17 +74,22 @@ const ChartComponent = () => {
     chartRef.current = chart; // نگهداری ارجاع به چارت برای دسترسی آینده
 
     const handleResize = () => {
-      chart.applyOptions({
-        width: chartContainerRef.current?.clientWidth,
-      });
+      if (chartRef.current) {
+        chartRef.current.applyOptions({
+          width: chartContainerRef.current?.clientWidth,
+          height: chartContainerRef.current?.clientHeight || 400,
+        });
+      }
     };
 
     window.addEventListener("resize", handleResize);
 
     return () => {
       if (chartRef.current) {
+        // به جای استفاده از متد dispose، چارت را پاکسازی می‌کنیم
         chartRef.current.remove();
       }
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
